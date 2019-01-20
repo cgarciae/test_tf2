@@ -5,6 +5,8 @@ dependencies:
   - ipython
   - jupyter
   - matplotlib
+  - scikit-learn 
   - pip:
     - tf-nightly-2.0-preview
     - dicto
+    - tqdm
