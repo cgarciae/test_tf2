@@ -1,0 +1,17 @@
+version: '2.3'
+
+services: 
+  tensorflow:
+    build: .
+
+    runtime: nvidia
+
+    volumes: 
+      - ./:/code
+    
+    working_dir: /code
+
+    ports:
+      - "8888:8888"
+
+    command: jupyter notebook --ip 0.0.0.0 --allow-root

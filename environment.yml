@@ -1,0 +1,10 @@
+name: test_tf2
+
+dependencies:
+  - python=3.6
+  - ipython
+  - jupyter
+  - matplotlib
+  - pip:
+    - tf-nightly-2.0-preview
+    - dicto
